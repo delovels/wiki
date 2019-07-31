@@ -1,3 +1,7 @@
+title: "An Empirical Evaluation of Thompson Sampling"
+layout: page
+date: 2019-07-31
+
 汤普森采样启发式、易实现、理应作为基线
 
 ### 1、什么是TS

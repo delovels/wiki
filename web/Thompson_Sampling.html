@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>An Empirical Evaluation of Thompson Sampling - </title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      
+<div id="header">
+  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#web">web</a>&nbsp;&#187;&nbsp;An Empirical Evaluation of Thompson Sampling
+    <span class="updated">Page Updated&nbsp;
+      2019-07-31
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">An Empirical Evaluation of Thompson Sampling</div>
+
+  <p>汤普森采样启发式、易实现、理应作为基线</p>
+<h3 id="1ts">1、什么是TS</h3>
+<ul>
+<li><strong>什么是EE</strong>——利用历史数据获取收益的同时，对未知数据进行探索（带来累计遗憾），逼近全局最优</li>
+<li><strong>为什么Beta分布</strong>——二项式分布的共轭先验</li>
+</ul>
+<p>![屏幕快照 2019-07-30 下午8.02.57](/Users/yunxiaofeng/Desktop/屏幕快照 2019-07-30 下午8.02.57.png)</p>
+<p>举例</p>
+<p>![屏幕快照 2019-07-30 下午7.22.08.png](/Users/yunxiaofeng/Desktop/屏幕快照 2019-07-30 下午7.22.08.png)</p>
+<h3 id="2">2、文章重点</h3>
+<p>对与先验满足高斯分布，而后验不满足的情况，做拉普拉斯近似，如下</p>
+<p>![屏幕快照 2019-07-31 上午11.48.29.png](/Users/yunxiaofeng/Desktop/屏幕快照 2019-07-31 上午11.48.29.png)</p>
+<p>上式子用来近似原分布<strong>（参数的后验分布）</strong></p>
+<p>![屏幕快照 2019-07-30 下午8.59.30.png](/Users/yunxiaofeng/Desktop/屏幕快照 2019-07-30 下午8.59.30.png)</p>
+<ul>
+<li><strong>更新分布参数前，w如何取最小值</strong>——minimize指做完gradient descent之后</li>
+<li>
+<p><strong>为什么对上式直接取二阶导</strong>——表达式对应参数（w）后验分布取log，满足拉普拉斯近似中海森矩阵在单变量下的表达式</p>
+</li>
+<li>
+<p><strong>W为什么服从高斯分布</strong></p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2019 .
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2019-07-31 18:42:23</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
